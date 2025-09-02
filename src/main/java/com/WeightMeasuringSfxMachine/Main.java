@@ -1,6 +1,7 @@
 package com.WeightMeasuringSfxMachine;
 
 public class Main {
+     public Integer accuracy=0;
     public Integer Sfx=0;
     public  String machine_stmt=null;
     public Integer Wight_val=0;
@@ -10,6 +11,9 @@ public class Main {
         this.machine_stmt=machine_stmt;
         this.weight_unit=weight_unit;
 
+    }
+    public String weightMeasure(Integer accuracy){
+        weight_Detect(weight_unit,Wight_val,machine_stmt)+accuracy;
     }
 
 
