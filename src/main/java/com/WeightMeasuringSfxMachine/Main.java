@@ -12,7 +12,20 @@ public class Main {
         this.weight_unit=weight_unit;
 
     }
-    public String weightMeasure(Integer accuracy){
+    public String wieght_accuracy(Integer accuracy){//wieght_accuracy declare
+        //Calculating  Weight Detect's Accuracy Iteratively
+        while(accuracy!=0){
+            if(weight_Detect(weight_unit, Wight_val, machine_stmt)==0){
+                accuracy=0;
+
+            }
+            else if (weight_Detect(weight_unit, Wight_val, machine_stmt)==5)accuracy=25;
+            else if (weight_Detect(weight_unit, Wight_val, machine_stmt)==15)accuracy=50;
+            else if (weight_Detect(weight_unit, Wight_val, machine_stmt)==25)accuracy=75;
+            else if (weight_Detect(weight_unit, Wight_val, machine_stmt)==50)accuracy=100;
+        }return accuracy;
+    }
+    public String weightMeasure(Wight_val){
         weight_Detect(weight_unit,Wight_val,machine_stmt)+accuracy;
     }
 
