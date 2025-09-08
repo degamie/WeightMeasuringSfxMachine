@@ -19,6 +19,10 @@ public class Main {
         this.weight_unit=weight_unit;
         this.Wight_val=Wight_val;
     }
+    public String OnpLaySound(Integer Sfx){
+        Sfx+=weight_Detect(weight_unit, Wight_val, machine_stmt);
+    }
+        wieght_display(col,weight_unit,Wight_val,machine_stmt);
 
 
     public String weight_Detect(weight_unit, Integer Wight_val, String machine_stmt) {//weight_Detect method Declare
