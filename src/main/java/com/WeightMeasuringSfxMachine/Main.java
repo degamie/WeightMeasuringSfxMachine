@@ -24,6 +24,10 @@ public class Main {
     }
         wieght_display(col,weight_unit,Wight_val,machine_stmt);
 
+    public String getWight_val(Integer Wight_val){
+        return Wight_val;
+    }
+
 
     public String weight_Detect(weight_unit, Integer Wight_val, String machine_stmt) {//weight_Detect method Declare
         for (int i = 0; i < weight_unit.length(); i++) {
