@@ -6,6 +6,9 @@ public class Main {
          return accuracy;
      }
     public Integer Sfx=0;
+     public String getSfx(Integer sfx){
+         return sfx;
+     }
     public  String machine_stmt=null;
     public Integer Wight_val=0;
     public String weight_unit=null;
