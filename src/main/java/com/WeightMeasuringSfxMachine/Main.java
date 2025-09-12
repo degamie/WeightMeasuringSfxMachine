@@ -10,7 +10,10 @@ public class Main {
          return sfx;
      }
     public  String machine_stmt=null;
-    public Integer Wight_val=0;
+    public Integer Weight_val=0;
+    public String setWeight_val(Integer Weight_val){
+        this.Weight_val=Weight_val;
+    }
     public String weight_unit=null;
     public Main(Sfx,machine_stmt,Wight_val,weight_unit){
         this.Sfx=Sfx;
