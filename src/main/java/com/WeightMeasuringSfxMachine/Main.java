@@ -11,6 +11,9 @@ public class Main {
      }
     public  String machine_stmt=null;
     public Integer Weight_val=0;
+    public String getWeight_val(Integer Weight_val){
+        return Weight_val;
+    }
     public String setWeight_val(Integer Weight_val){
         this.Weight_val=Weight_val;
     }
