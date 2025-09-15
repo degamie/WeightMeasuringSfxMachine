@@ -24,6 +24,7 @@ public class Main {
         this.weight_unit=weight_unit;
 
     }
+    public String getWeight_unit(String weight_unit){return weight_unit;}
     public String getWeightUNit(String weight_unit){
         return weight_unit;
     }
