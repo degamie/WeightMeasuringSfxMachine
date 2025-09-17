@@ -10,6 +10,9 @@ public class Main {
          return sfx;
      }
     public  String machine_stmt=null;
+     public String getMachine_stmt( String machine_stmt){
+         return machine_stmt;
+     }
     public Integer Weight_val=0;
     public String getWeight_val(Integer Weight_val){
         return Weight_val;
@@ -25,9 +28,7 @@ public class Main {
 
     }
     public String getWeight_unit(String weight_unit){return weight_unit;}
-    public String getWeightUNit(String weight_unit){
-        return weight_unit;
-    }
+
     public Integer weight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){
         while(Wight_val!=0) {
             if (Wight_val > 0 && Wight_val == 0 && weight_unit == "KG" || weight_unit == "Gram" || weight_unit == "t" || weight_unit == "tonne" || weight_unit == "oz" || weight_unit == "lb")
@@ -80,6 +81,3 @@ public class Main {
     }
 //        public static void main(String[] args) {
 
-
-
-//    }
