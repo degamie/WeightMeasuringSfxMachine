@@ -13,6 +13,9 @@ public class Main {
      public String getMachine_stmt( String machine_stmt){
          return machine_stmt;
      }
+     public Integer getMachine_stmt(Integer Sfx){
+         this.Sfx=Sfx;
+     }
     public Integer Weight_val=0;
     public String getWeight_val(Integer Weight_val){
         return Weight_val;
