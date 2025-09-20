@@ -23,6 +23,9 @@ public class Main {
     public String setWeight_val(Integer Weight_val){
         this.Weight_val=Weight_val;
     }
+    public String setWeight_Unit(String weight_unit){
+        return weight_unit;
+    }
     public String weight_unit=null;
     public Main(Sfx,machine_stmt,Weight_val,weight_unit){
         this.Sfx=Sfx;
