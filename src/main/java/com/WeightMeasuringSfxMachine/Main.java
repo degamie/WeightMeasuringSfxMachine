@@ -2,6 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 public class Main {
      public Integer accuracy=0;
+     public String setAccuracy(Integer accuracy){this.accuracy=accuracy;}
      public Integer getAccuracy(Integer accuracy){
          return accuracy;
      }
