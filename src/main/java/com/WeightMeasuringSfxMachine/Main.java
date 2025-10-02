@@ -7,6 +7,7 @@ public class Main {
          return accuracy;
      }
     public Integer Sfx=0;
+     public String setSfx(Integer Sfx){this.Sfx=Sfx;}
      public Integer getSfx(Integer sfx){
          return sfx;
      }
