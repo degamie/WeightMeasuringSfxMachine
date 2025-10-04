@@ -1,6 +1,14 @@
 package com.WeightMeasuringSfxMachine;
 
 public class Main {
+    public String weight_unit=null;
+    public Main(Sfx,machine_stmt,Weight_val,weight_unit){
+        this.Sfx=Sfx;
+        this.machine_stmt=machine_stmt;
+        this.weight_unit=weight_unit;
+
+    }
+    public String getWeight_unit(String weight_unit){return weight_unit;}
      public Integer accuracy=0;
      public String setAccuracy(Integer accuracy){this.accuracy=accuracy;}
      public Integer getAccuracy(Integer accuracy){
@@ -15,27 +23,24 @@ public class Main {
      public String getMachine_stmt( String machine_stmt){
          return machine_stmt;
      }
-     public Integer getMachine_stmt(Integer Sfx){
+     public Integer setMachine_stmt(Integer Sfx){
          this.Sfx=Sfx;
      }
     public Integer Weight_val=0;
-    public String getWeight_val(Integer Weight_val){
-        return Weight_val;
-    }
-    public String setWeight_val(Integer Weight_val){
-        this.Weight_val=Weight_val;
-    }
+     public Integer getWieghtVal(Integer Weight_val){
+         return Weight_val;
+     }
     public String setWeight_Unit(String weight_unit){
         return weight_unit;
     }
-    public String weight_unit=null;
-    public Main(Sfx,machine_stmt,Weight_val,weight_unit){
-        this.Sfx=Sfx;
-        this.machine_stmt=machine_stmt;
-        this.weight_unit=weight_unit;
-
+    public String getWeight_val(Integer Weight_val){
+        return Weight_val;
     }
-    public String getWeight_unit(String weight_unit){return weight_unit;}
+//    public String setWeight_val(Integer Weight_val){
+//        this.Weight_val=Weight_val;
+//    }
+
+
 
     public Integer weight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){
         while(Wight_val!=0) {
@@ -79,7 +84,7 @@ public class Main {
             else if (weight_Detect(weight_unit, Weight_val, machine_stmt)==50)accuracy=100;
         }return accuracy;
     }
-    public Integer weightMeasure(Weight_val Integer accuracy){
+    public Integer weightMeasure(Integer Weight_val, Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+ this.accuracy;
     }
 
