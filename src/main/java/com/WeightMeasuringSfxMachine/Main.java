@@ -20,12 +20,14 @@ public class Main {
          return sfx;
      }
     public  String machine_stmt=null;
-     public String getMachine_stmt( String machine_stmt){
-         return machine_stmt;
-     }
-     public Integer setMachine_stmt(Integer Sfx){
-         this.Sfx=Sfx;
-     }
+    public String getMachine_stmt( String machine_stmt){
+        return machine_stmt;
+    }
+    public Integer setMachine_stmt(Integer Sfx){
+        this.Sfx=Sfx;
+    }
+     public String updateAllBYMachineStmt(String machine_stmt){getMachine_stmt(machine_stmt)+setMachine_stmt(machine_stmt);}
+
     public Integer Weight_val=0;
      public Integer getWieghtVal(Integer Weight_val){
          return Weight_val;
