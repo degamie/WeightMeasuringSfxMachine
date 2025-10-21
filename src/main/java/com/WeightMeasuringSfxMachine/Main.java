@@ -10,10 +10,11 @@ public class Main {
     }
     public String getWeight_unit(String weight_unit){return weight_unit;}
      public Integer accuracy=0;
-     public String setAccuracy(Integer accuracy){this.accuracy=accuracy;}
+     public void setAccuracy(Integer accuracy){this.accuracy=accuracy;}
      public Integer getAccuracy(Integer accuracy){
          return accuracy;
      }
+     public Integer updateAllByAccuracy(Integer accuracy){getAccuracy(accuracy)+setAccuracy(accuracy);}
     public Integer Sfx=0;
      public String setSfx(Integer Sfx){this.Sfx=Sfx;}
      public Integer getSfx(Integer sfx){
@@ -35,12 +36,12 @@ public class Main {
     public String setWeight_Unit(String weight_unit){
         return weight_unit;
     }
-    public String getWeight_val(Integer Weight_val){
-        return Weight_val;
-    }
-//    public String setWeight_val(Integer Weight_val){
-//        this.Weight_val=Weight_val;
+//    public String getWeight_val(Integer Weight_val){
+//        return Weight_val;
 //    }
+    public void setWeight_val(Integer Weight_val){
+        this.Weight_val=Weight_val;
+    }
 
 
 
