@@ -1,6 +1,10 @@
 package com.WeightMeasuringSfxMachine;
-//WID(30/10/2025)//Aka Degamiesign
+
+import java.util.ArrayList;
+
+//WID(1/11/2025)//Aka Degamiesign
 public class Main {
+    public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
     public Main(Sfx,machine_stmt,Weight_val,weight_unit){
         this.Sfx=Sfx;
