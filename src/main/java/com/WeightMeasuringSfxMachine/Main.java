@@ -38,15 +38,21 @@ public class Main {
      public Integer getWieghtVal(Integer Weight_val){
          return Weight_val;
      }
+    public void setWeight_val(Integer Weight_val){
+        this.Weight_val=Weight_val;
+    }//bidning Weight_Val
+    public Integer updateAllByWeightVal(Integer Weight_val){
+        getWieghtVal(Weight_val)+setWeight_val(Weight_val)+1;
+        return Weight_val;
+    }
+
     public String setWeight_Unit(String weight_unit){
         return weight_unit;
     }
 //    public String getWeight_val(Integer Weight_val){
 //        return Weight_val;
 //    }
-    public void setWeight_val(Integer Weight_val){
-        this.Weight_val=Weight_val;
-    }//bidning Weight_Val
+
 
 
 
