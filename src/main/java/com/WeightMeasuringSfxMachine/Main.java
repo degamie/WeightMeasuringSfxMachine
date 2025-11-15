@@ -2,7 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 import java.util.ArrayList;
 
-//WID(13/11/2025)//Aka Degamiesign
+//WID(15/11/2025)//Aka Degamiesign
 public class Main {
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
@@ -12,6 +12,7 @@ public class Main {
         this.weight_unit=weight_unit;
 
     }
+    public void setWeight_menu(ArrayList<String>weight_menu){this.weight_menu=weight_menu;}//Bidning Wieght Menu
     public String getweight_menu(ArrayList<String>weight_menu){return weight_menu;}//Printing Wieght menu in ir.
     public void  setWeight_unit(String weight_unit){ this.weight_unit;}//Binding  Weight Unit
     public String getWeight_unit(String weight_unit){return weight_unit;}
@@ -22,10 +23,11 @@ public class Main {
      }
      public Integer updateAllByAccuracy(Integer accuracy){getAccuracy(accuracy)+setAccuracy(accuracy);}
     public Integer Sfx=0;
-     public String setSfx(Integer Sfx){this.Sfx=Sfx;}
+     public Integer setSfx(Integer Sfx){this.Sfx=Sfx;}
      public Integer getSfx(Integer sfx){
          return sfx;
      }
+    public Integer updateAllBySfx(Integer Sfx){getSfx(Sfx)+setSfx(Sfx)+1;}//Updating Sfx In Server
     public  String machine_stmt=null;
     public String getMachine_stmt( String machine_stmt){
         return machine_stmt;
