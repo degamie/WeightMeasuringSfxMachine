@@ -2,7 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 import java.util.ArrayList;
 
-//WID(16    /11/2025)//Aka Degamiesign
+//WID(16 /11/2025)//Aka Degamiesign
 public class Main {
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
@@ -14,8 +14,10 @@ public class Main {
     }
     public void setWeight_menu(ArrayList<String>weight_menu){this.weight_menu=weight_menu;}//Bidning Wieght Menu
     public String getweight_menu(ArrayList<String>weight_menu){return weight_menu;}//Printing Wieght menu in ir.
-    public void  setWeight_unit(String weight_unit){ this.weight_unit;}//Binding  Weight Unit
     public String getWeight_unit(String weight_unit){return weight_unit;}
+    public void  setWeight_unit(String weight_unit){ this.weight_unit;}//Binding  Weight Unit
+    public String updateAllByWeight_unit(String weight_unit){getWeight_unit(weight_unit)+setWeight_unit(weight_unit)+1;}//Updating WiegthWUnit In App #1
+
      public Integer accuracy=0;
      public void setAccuracy(Integer accuracy){this.accuracy=accuracy;}
      public Integer getAccuracy(Integer accuracy){
