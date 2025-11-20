@@ -2,7 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 import java.util.ArrayList;
 
-//WID(19/11/2025)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(20/11/2025)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
@@ -92,6 +92,7 @@ public class Main {
         }
 
     }
+    public void setWieghtDetect(String weight_unit,Integer Wight_val,String machine_stmt){this.weight_Detect(weight_unit,machine_stmt,Wight_val)=weight_Detect(weight_unit,machine_stmt,Wight_val);}//binding Weight Detect in App
     public String getweight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){weight_Detect(0,5,"Overiwieght1")+1;//Fethcing Weight Detec in tApp
     }
     public Integer weight_accuracy(Integer accuracy){//wieght_accuracy declare
