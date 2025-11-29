@@ -1,5 +1,5 @@
 package com.WeightMeasuringSfxMachine;
-//WID(28/11/2025)//Degamiesign#1
+//WID(29/11/2025)//Degamiesign#1
 public class Main {
     public String col = null;
 
@@ -13,6 +13,7 @@ public class Main {
     public Integer Sfx = 0;
     public Integer getSfx(Integer Sfx){return Sfx;}//Fetching Sfx
     public void setSfx(Integer sfx){this.Sfx=sfx;}//Binding SFX
+    public Integer updateAllbySFx(Integer sfx){getSfx(Sfx)+setSfx(Sfx)+1;}//Updating Sfx in App
     public String machine_stmt = null;
     public String getMachine_stmt(String machine_stmt){
         return machine_stmt;
