@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 //WID(5/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
+    public Main main;
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
     public Main(Sfx,machine_stmt,Weight_val,weight_unit){
