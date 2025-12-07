@@ -2,7 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 import java.util.ArrayList;
 
-//WID(6/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(7/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
     public ArrayList<String>weight_menu=new ArrayList<>();
@@ -98,8 +98,8 @@ public class Main {
          getweight_Detect(weight_unit,Wight_val,machine_stmt)+setWieghtDetect(weight_unit,Wight_val,machine_stmt)+1;
     }
     public void setWieghtDetect(String weight_unit,Integer Wight_val,String machine_stmt){this.weight_Detect(weight_unit,machine_stmt,Wight_val)=weight_Detect(weight_unit,machine_stmt,Wight_val);}//binding Weight Detect in App
-    public String getweight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){weight_Detect(0,5,"Overiwieght1")+1;//Fethcing Weight Detec in tApp
-    }
+    public String getweight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){weight_Detect(0,5,"Overiwieght1")+1;  }//Fethcing Weight Detec in tApp
+
     public Integer weight_accuracy(Integer accuracy){//wieght_accuracy declare
         //Calculating  Weight Detect's Accuracy Iteratively
         while(accuracy!=0){
@@ -116,6 +116,7 @@ public class Main {
     public Integer weightMeasure(Integer Weight_val, Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+ this.accuracy;
     }
+    public Integer getAllByWeightMeasure(Integer Weight_val, Integer accuracy){weightMeasure( Weight_val,  accuracy);}
 
     public Integer Wight_Display(String machine_stmt,Integer Sfx,Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+weightMeasure(accuracy)+System.out.println(Sfx);
