@@ -117,6 +117,7 @@ public class Main {
         weight_Detect(weight_unit,Weight_val,machine_stmt)+ this.accuracy;
     }
     public Integer getAllByWeightMeasure(Integer Weight_val, Integer accuracy){weightMeasure( Weight_val,  accuracy);}
+    public Integer setAllByWeightMeasure(Integer Weight_val, Integer accuracy){this.weightMeasure(Weight_val,accuracy)=weightMeasure(Weight_val,accuracy);}
 
     public Integer Wight_Display(String machine_stmt,Integer Sfx,Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+weightMeasure(accuracy)+System.out.println(Sfx);
