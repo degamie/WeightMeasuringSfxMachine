@@ -54,7 +54,7 @@ public class Main {
         return Weight_val;
     }
 
-    public String setWeight_Unit(String weight_unit){
+    public String getWeight_Unit(String weight_unit){
         return weight_unit;
     }
     public String updateAllByWeightUnit(String weight_unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in Server
@@ -113,6 +113,7 @@ public class Main {
             else if (weight_Detect(weight_unit, Weight_val, machine_stmt)==50)accuracy=100;
         }return accuracy;
     }
+    public Integer getAccuracy(Integer accuracy){weight_accuracy(accuracy);}//Fetching Accuracy in App
     public Integer weightMeasure(Integer Weight_val, Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+ this.accuracy;
     }
