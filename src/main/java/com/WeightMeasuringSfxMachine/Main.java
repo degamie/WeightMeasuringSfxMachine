@@ -114,6 +114,7 @@ public class Main {
         }return accuracy;
     }
     public Integer getAccuracy(Integer accuracy){weight_accuracy(accuracy);}//Fetching Accuracy in App
+    public Integer setAccuracy(Integer accuracy){this.accuracy=accuracy;}//Binding Accuracy in App
     public Integer weightMeasure(Integer Weight_val, Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+ this.accuracy;
     }
