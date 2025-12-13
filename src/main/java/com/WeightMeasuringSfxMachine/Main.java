@@ -2,7 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 import java.util.ArrayList;
 
-//WID(7/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(13/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
     public ArrayList<String>weight_menu=new ArrayList<>();
@@ -123,6 +123,7 @@ public class Main {
     public Integer Wight_Display(String machine_stmt,Integer Sfx,Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+weightMeasure(accuracy)+System.out.println(Sfx);
     }
+    public Integer updateByWeightVal(Integer weight_val){getWieghtVal(weight_val)+setWeight_val(weight_val)+1;}//Updating Weight Val in App
     }
 //        public static void main(String[] args) {
 
