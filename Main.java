@@ -1,0 +1,132 @@
+package com.WeightMeasuringSfxMachine;
+
+import java.util.ArrayList;
+
+//WID(13/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
+public class Main {
+    public Main main;
+    public ArrayList<String>weight_menu=new ArrayList<>();
+    public String weight_unit=null;
+    public Main(Sfx,machine_stmt,Weight_val,weight_unit){
+        this.Sfx=Sfx;
+        this.machine_stmt=machine_stmt;
+        this.weight_unit=weight_unit;
+
+    }
+    public void setWeight_menu(ArrayList<String>weight_menu){this.weight_menu=weight_menu;}//Bidning Wieght Menu
+    public ArrayList<String> getweight_menu(ArrayList<String>weight_menu){return weight_menu;}//Printing Wieght menu in ir.
+    public ArrayList<String>weight_menu(ArrayList<String>weight_menu){getweight_menu(weight_menu)+setWeight_menu(weight_menu)+1;}//Updating weight_menu in Server
+    public String getWeight_unit(String weight_unit){return weight_unit;}
+    public void  setWeight_unit(String weight_unit){ this.weight_unit;}//Binding  Weight Unit
+    public String updateAllByweight_unit(String weight_unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//udpating Weight Unit
+    public String updateAllByWeight_unit(String weight_unit){getWeight_unit(weight_unit)+setWeight_unit(weight_unit)+1;}//Updating WiegthWUnit In App #1
+
+     public Integer accuracy=0;
+     public void setAccuracy(Integer accuracy){this.accuracy=accuracy;}
+     public Integer getAccuracy(Integer accuracy){
+         return accuracy;
+     }
+     public Integer updateAllByAccuracy(Integer accuracy){getAccuracy(accuracy)+setAccuracy(accuracy);}
+    public Integer Sfx=0;
+     public Integer setSfx(Integer Sfx){this.Sfx=Sfx;}
+     public Integer getSfx(Integer sfx){
+         return sfx;
+     }
+    public Integer updateAllBySfx(Integer Sfx){getSfx(Sfx)+setSfx(Sfx)+1;}//Updating Sfx In Server
+    public  String machine_stmt=null;
+    public String getMachine_stmt( String machine_stmt){
+        return machine_stmt;
+    }
+    public Integer setMachine_stmt(Integer Sfx){
+        this.Sfx=Sfx;
+    }
+     public String updateAllBYMachineStmt(String machine_stmt){getMachine_stmt(machine_stmt)+setMachine_stmt(machine_stmt);}
+
+    public Integer Weight_val=0;
+     public Integer getWieghtVal(Integer Weight_val){
+         return Weight_val;
+     }
+    public void setWeight_val(Integer Weight_val){
+        this.Weight_val=Weight_val;
+    }//bidning Weight_Val
+    public Integer updateAllByWeightVal(Integer Weight_val){
+        getWieghtVal(Weight_val)+setWeight_val(Weight_val)+1;
+        return Weight_val;
+    }
+
+    public String getWeight_Unit(String weight_unit){
+        return weight_unit;
+    }
+    public String updateAllByWeightUnit(String weight_unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in Server
+    public String updateAllByWeightUnit(String Weight_Unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in App
+//    public String getWeight_val(Integer Weight_val){
+//        return Weight_val;
+//    }
+
+
+
+
+    public Integer weight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){
+        while(Wight_val!=0) {
+            if (Wight_val > 0 && Wight_val == 0 && weight_unit == "KG" || weight_unit == "Gram" || weight_unit == "t" || weight_unit == "tonne" || weight_unit == "oz" || weight_unit == "lb")
+                Wight_val = Integer.valueOf(weight_unit.concat(Wight_val, weight_unit));
+            Sfx += 1;
+            machine_stmt = "mid Weight";
+            else
+            if (Wight_val > 5 && Wight_val == 5 && weight_unit == "KG" || weight_unit == "Gram" || weight_unit == "t" || weight_unit == "tonne" || weight_unit == "oz" || weight_unit == "lb")
+                Wight_val = Integer.valueOf(weight_unit.concat(Wight_val, weight_unit));
+            Sfx += 2;
+            machine_stmt = "OverWeight1";
+            else
+            if (Wight_val > 15 && Wight_val == 0 && weight_unit == "KG" || weight_unit == "Gram" || weight_unit == "t" || weight_unit == "tonne" || weight_unit == "oz" || weight_unit == "lb")
+                Wight_val = Integer.valueOf(weight_unit.concat(Wight_val, weight_unit));
+            Sfx += 2;
+            machine_stmt = "OverWeight2";
+            else
+            if (Wight_val > 25 && Wight_val == 25 && weight_unit == "KG" || weight_unit == "Gram" || weight_unit == "t" || weight_unit == "tonne" || weight_unit == "oz" || weight_unit == "lb")
+                Wight_val = Integer.valueOf(weight_unit.concat(Wight_val, weight_unit));
+            Sfx += 3;
+            machine_stmt = "OverWeight3";
+            else
+            if (Wight_val > 50 && Wight_val == 50 && weight_unit == "KG" || weight_unit == "Gram" || weight_unit == "t" || weight_unit == "tonne" || weight_unit == "oz" || weight_unit == "lb")
+                Wight_val = Integer.valueOf(weight_unit.concat(Wight_val, weight_unit));
+            Sfx += 4;
+            machine_stmt = "OverWeight4";
+        }
+    }
+    public Integer updateAllByweightDetect(String weight_unit,Integer Wight_val,String machine_stmt){
+         getweight_Detect(weight_unit,Wight_val,machine_stmt)+setWieghtDetect(weight_unit,Wight_val,machine_stmt)+1;
+    }
+    public void setWieghtDetect(String weight_unit,Integer Wight_val,String machine_stmt){this.weight_Detect(weight_unit,machine_stmt,Wight_val)=weight_Detect(weight_unit,machine_stmt,Wight_val);}//binding Weight Detect in App
+    public String getweight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){weight_Detect(0,5,"Overiwieght1")+1;  }//Fethcing Weight Detec in tApp
+
+    public Integer weight_accuracy(Integer accuracy){//wieght_accuracy declare
+        //Calculating  Weight Detect's Accuracy Iteratively
+        while(accuracy!=0){
+            if(weight_Detect(weight_unit, Weight_val, machine_stmt)==0){
+                accuracy=0;
+
+            }
+            else if (weight_Detect(weight_unit, Weight_val, machine_stmt)==5)accuracy=25;
+            else if (weight_Detect(weight_unit, Weight_val, machine_stmt)==15)accuracy=50;
+            else if (weight_Detect(weight_unit, Weight_val, machine_stmt)==25)accuracy=75;
+            else if (weight_Detect(weight_unit, Weight_val, machine_stmt)==50)accuracy=100;
+        }return accuracy;
+    }
+    public Integer getAccuracy(Integer accuracy){weight_accuracy(accuracy);}//Fetching Accuracy in App
+    public Integer setAccuracy(Integer accuracy){this.accuracy=accuracy;}//Binding Accuracy in App
+    public Integer existsByaccuracy(Integer accuracy){if(accuracy>0)getAccuracy(accuracy);else getAccuracy(0);}//Checking Accuracy's Existence in App
+    public Integer updateByaccuracy(Integer accuracy){getAccuracy(accuracy)+setAccuracy(accuracy)+1;}//updating Accuracy in App
+    public Integer weightMeasure(Integer Weight_val, Integer accuracy){
+        weight_Detect(weight_unit,Weight_val,machine_stmt)+ this.accuracy;
+    }
+    public Integer getAllByWeightMeasure(Integer Weight_val, Integer accuracy){weightMeasure( Weight_val,  accuracy);}
+    public Integer setAllByWeightMeasure(Integer Weight_val, Integer accuracy){this.weightMeasure(Weight_val,accuracy)=weightMeasure(Weight_val,accuracy);}
+
+    public Integer Wight_Display(String machine_stmt,Integer Sfx,Integer accuracy){
+        weight_Detect(weight_unit,Weight_val,machine_stmt)+weightMeasure(accuracy)+System.out.println(Sfx);
+    }
+    public Integer updateByWeightVal(Integer weight_val){getWieghtVal(weight_val)+setWeight_val(weight_val)+1;}//Updating Weight Val in App
+    }
+//        public static void main(String[] args) {
+
