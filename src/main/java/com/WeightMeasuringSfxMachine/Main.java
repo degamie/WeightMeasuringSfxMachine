@@ -2,7 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 import java.util.ArrayList;
 
-//WID(26/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(27/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
     public ArrayList<String>weight_menu=new ArrayList<>();
@@ -33,6 +33,11 @@ public class Main {
          return sfx;
      }
     public Integer updateAllBySfx(Integer Sfx){getSfx(Sfx)+setSfx(Sfx)+1;}//Updating Sfx In Server
+    public  String  existsBySfx(Integer Sfx){
+        if(Sfx>0)getSfx(Sfx);
+        else getSfx(0);
+        return "SFX Exists in App";
+    }
     public  String machine_stmt=null;
     public String getMachine_stmt( String machine_stmt){
         return machine_stmt;
