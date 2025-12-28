@@ -27,6 +27,10 @@ public class Main {
          return accuracy;
      }
      public Integer updateAllByAccuracy(Integer accuracy){getAccuracy(accuracy)+setAccuracy(accuracy);}
+    public String existByaccuracy(Integer accuracy){
+         if(accuracy>0)getAccuracy(accuracy);
+         else getAccuracy(0);
+    }
     public Integer Sfx=0;
      public Integer setSfx(Integer Sfx){this.Sfx=Sfx;}
      public Integer getSfx(Integer sfx){
