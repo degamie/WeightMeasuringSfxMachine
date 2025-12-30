@@ -2,7 +2,7 @@ package com.WeightMeasuringSfxMachine;
 
 import java.util.ArrayList;
 
-//WID(27/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(30/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
     public ArrayList<String>weight_menu=new ArrayList<>();
@@ -27,6 +27,10 @@ public class Main {
          return accuracy;
      }
      public Integer updateAllByAccuracy(Integer accuracy){getAccuracy(accuracy)+setAccuracy(accuracy);}
+    public void existsByWeightUnit(Integer weight_unit){
+         if(weight_unit>0)getWeight_Unit(weight_unit);
+         else getWeight_Unit(0);
+    }
     public String existByaccuracy(Integer accuracy){
          if(accuracy>0)getAccuracy(accuracy);
          else getAccuracy(0);
@@ -63,7 +67,7 @@ public class Main {
         return Weight_val;
     }
 
-    public String getWeight_Unit(String weight_unit){
+    public String getWeight_Unit(int weight_unit){
         return weight_unit;
     }
     public String updateAllByWeightUnit(String weight_unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in Server
@@ -132,6 +136,7 @@ public class Main {
     public Integer getAllByWeightMeasure(Integer Weight_val, Integer accuracy){weightMeasure( Weight_val,  accuracy);}
     public Integer setAllByWeightMeasure(Integer Weight_val, Integer accuracy){this.weightMeasure(Weight_val,accuracy)=weightMeasure(Weight_val,accuracy);}
     public Integer updateByweightMeasure(Integer Weight_val,Integer accuracy){getAllByWeightMeasure(Weight_val,accuracy)+setAllByWeightMeasure(Weight_val,accuracy)+1;}//Updating Weight's measure on App
+    public  String  existsByWeightMeasure(Integer Weight_val,Integer accuracy){if(Weight_val>0)getAllByWeightMeasure(Weight_val,accuracy);else getAllByWeightMeasure(0,0);}//Checking Weight Measure  Existence in App
 
     public Integer Wight_Display(String machine_stmt,Integer Sfx,Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+weightMeasure(accuracy)+System.out.println(Sfx);
