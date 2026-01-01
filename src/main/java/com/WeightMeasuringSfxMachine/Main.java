@@ -1,10 +1,12 @@
 package com.WeightMeasuringSfxMachine;
 
+import javax.swing.text.View;
 import java.util.ArrayList;
 
-//WID(31/12/2025)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(1/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
+    public View Weight_View;
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
     public Main(Sfx,machine_stmt,Weight_val,weight_unit){
@@ -14,7 +16,7 @@ public class Main {
 
     }
     public void setWeight_menu(ArrayList<String>weight_menu){this.weight_menu=weight_menu;}//Bidning Wieght Menu
-    public String updateByWeight_Menu(ArrayList<String> weight_menu){if(weight_menu.size()>0)getweight_menu(weight_menu);else getweight_menu(0);}//Updating Weight Menu in App
+    public String existsByWeightMenu(ArrayList<String> weight_menu){if(weight_menu.size()>0)getweight_menu(weight_menu);else getweight_menu(0);}//Updating Weight Menu in App
     public ArrayList<String> getweight_menu(ArrayList<String>weight_menu){return weight_menu;}//Printing Wieght menu in ir.
     public ArrayList<String>weight_menu(ArrayList<String>weight_menu){getweight_menu(weight_menu)+setWeight_menu(weight_menu)+1;}//Updating weight_menu in Server
     public String getWeight_unit(String weight_unit){return weight_unit;}
