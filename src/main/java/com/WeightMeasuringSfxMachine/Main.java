@@ -49,13 +49,17 @@ public class Main {
         return "SFX Exists in App";
     }
     public  String machine_stmt=null;
-    public String getMachine_stmt( String machine_stmt){
+    public String getMachine_stmt(int machine_stmt){
         return machine_stmt;
     }
     public Integer setMachine_stmt(Integer Sfx){
         this.Sfx=Sfx;
     }
      public String updateAllBYMachineStmt(String machine_stmt){getMachine_stmt(machine_stmt)+setMachine_stmt(machine_stmt);}
+    public void existsbyMachineStmt(Integer machine_stmt){
+        if(machine_stmt>0)getMachine_stmt(machine_stmt);
+        else getMachine_stmt(0);
+    }   
 
     public Integer Weight_val=0;
      public Integer getWieghtVal(Integer Weight_val){
