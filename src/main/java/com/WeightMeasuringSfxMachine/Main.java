@@ -3,10 +3,11 @@ package com.WeightMeasuringSfxMachine;
 import javax.swing.text.View;
 import java.util.ArrayList;
 
-//WID(1/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(3/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
     public View Weight_View;
+    public View  getWeight_View(View weight_View){return weight_View;}// WeightView's Fetching
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
     public Main(Sfx,machine_stmt,Weight_val,weight_unit){
