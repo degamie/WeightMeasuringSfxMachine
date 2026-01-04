@@ -15,9 +15,9 @@ public class Main {
         this.Sfx=Sfx;
         this.machine_stmt=machine_stmt;
         this.weight_unit=weight_unit;
-
     }
     public void setWeight_menu(ArrayList<String>weight_menu){this.weight_menu=weight_menu;}//Bidning Wieght Menu
+    public void updateByWeightMenu(ArrayList<String>weight_menu){getweight_menu(weight_menu)+setWeight_menu(weight_menu)+1;}//Updating WeightMenu in App
     public String existsByWeightMenu(ArrayList<String> weight_menu){if(weight_menu.size()>0)getweight_menu(weight_menu);else getweight_menu(0);}//Updating Weight Menu in App
     public ArrayList<String> getweight_menu(ArrayList<String>weight_menu){return weight_menu;}//Printing Wieght menu in ir.
     public ArrayList<String>weight_menu(ArrayList<String>weight_menu){getweight_menu(weight_menu)+setWeight_menu(weight_menu)+1;}//Updating weight_menu in Server
