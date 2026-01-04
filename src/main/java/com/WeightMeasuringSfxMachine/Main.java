@@ -3,7 +3,7 @@ package com.WeightMeasuringSfxMachine;
 import javax.swing.text.View;
 import java.util.ArrayList;
 
-//WID(3/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(4/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
     public View Weight_View;
@@ -23,7 +23,7 @@ public class Main {
     public String getWeight_unit(String weight_unit){return weight_unit;}
     public void  setWeight_unit(String weight_unit){ this.weight_unit;}//Binding  Weight Unit
     public String updateAllByweight_unit(String weight_unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//udpating Weight Unit
-    public String updateAllByWeight_unit(String weight_unit){getWeight_unit(weight_unit)+setWeight_unit(weight_unit)+1;}//Updating WiegthWUnit In App #1
+//    public String updateAllByWeight_unit(String weight_unit){getWeight_unit(weight_unit)+setWeight_unit(weight_unit)+1;}//Updating WiegthWUnit In App #1
 
      public Integer accuracy=0;
      public void setAccuracy(Integer accuracy){this.accuracy=accuracy;}
@@ -80,7 +80,7 @@ public class Main {
         return weight_unit;
     }
     public String updateAllByWeightUnit(String weight_unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in Server
-    public String updateAllByWeightUnit(String Weight_Unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in App
+    //public String updateAllByWeightUnit(String Weight_Unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in App
 //    public String getWeight_val(Integer Weight_val){
 //        return Weight_val;
 //    }
@@ -118,6 +118,12 @@ public class Main {
     }
     public Integer updateAllByweightDetect(String weight_unit,Integer Wight_val,String machine_stmt){
          getweight_Detect(weight_unit,Wight_val,machine_stmt)+setWieghtDetect(weight_unit,Wight_val,machine_stmt)+1;
+    }
+    public void existsByWeightDetect(String weight_unit,Integer Wight_val,String machine_stmt){
+         if(weight_unit !=null && Weight_val>0 && machine_stmt !=null){
+             getweight_Detect(weight_unit,Wight_val,machine_stmt);
+         }
+         else  getweight_Detect(0,0,0);
     }
     public void setWieghtDetect(String weight_unit,Integer Wight_val,String machine_stmt){this.weight_Detect(weight_unit,machine_stmt,Wight_val)=weight_Detect(weight_unit,machine_stmt,Wight_val);}//binding Weight Detect in App
     public String getweight_Detect(String weight_unit,Integer Wight_val,String machine_stmt){weight_Detect(0,5,"Overiwieght1")+1;  }//Fethcing Weight Detec in tApp
