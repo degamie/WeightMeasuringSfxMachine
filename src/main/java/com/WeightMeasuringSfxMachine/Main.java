@@ -8,6 +8,7 @@ public class Main {
     public Main main;
     public View Weight_View;
     public View  getWeight_View(View weight_View){return weight_View;}// WeightView's Fetching
+    public void setWeight_View(View Weight_View){this.Weight_View=Weight_View;}//Biding Weight View in App
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
     public Main(Sfx,machine_stmt,Weight_val,weight_unit){
