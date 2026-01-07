@@ -3,7 +3,7 @@ package com.WeightMeasuringSfxMachine;
 import javax.swing.text.View;
 import java.util.ArrayList;
 
-//WID(5/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(7/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
     public Main main;
     public View Weight_View;
@@ -164,6 +164,7 @@ public class Main {
         weight_Detect(weight_unit,Weight_val,machine_stmt)+weightMeasure(accuracy)+System.out.println(Sfx);
     }
     public Integer updateByWeightVal(Integer weight_val){getWieghtVal(weight_val)+setWeight_val(weight_val)+1;}//Updating Weight Val in App
+    public  void existsByWeightVal(Integer weight_val){if(weight_val>0)getWieghtVal(weight_val);else getWieghtVal(0);}//Checking WeightVal's Existence in App
     }
 //        public static void main(String[] args) {
 
