@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 //WID(7/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
 public class Main {
+    public Integer weightcnt;
     public Main main;
     public View Weight_View;
     public View  getWeight_View(int weight_View){return weight_View;}// WeightView's Fetching
