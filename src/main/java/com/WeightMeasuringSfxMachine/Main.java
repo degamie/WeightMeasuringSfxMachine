@@ -1,9 +1,10 @@
+//WID(11/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
 import java.util.ArrayList;
 
-//WID(7/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
+
 public class Main {
     public Integer weightcnt;
     public Main main;
@@ -83,10 +84,15 @@ public class Main {
         getWieghtVal(Weight_val)+setWeight_val(Weight_val)+1;
         return Weight_val;
     }
+    public void existsByWeightVal(Integer Weight_Val){
+         if(Weight_Val>0)getWieghtVal(Weight_Val);
+         else getWieghtVal(0);
+    }
 
     public String getWeight_Unit(int weight_unit){
         return weight_unit;
     }
+    public void setWeight_Unit(int weight_unit){this.weight_unit=weight_unit;}//Binidng Weight Unit in App
     public String updateAllByWeightUnit(String weight_unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in Server
     //public String updateAllByWeightUnit(String Weight_Unit){getWeight_unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//Updating Weight Unit in App
 //    public String getWeight_val(Integer Weight_val){
