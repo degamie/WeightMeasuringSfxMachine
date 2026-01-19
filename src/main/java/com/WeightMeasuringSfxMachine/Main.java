@@ -1,4 +1,4 @@
-//WID(18/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
+//WID(19/1/2026)//Sarthak Mittal Aka Degamiesign #1.1
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 
 public class Main {
-    public Integer weightcnt;public View weight_view=null;
+    public Integer weightcnt;public View weight_view=null;public int weight_unit=0;
     public int weight_view=0;
     weightcnt=0;
     public void setWeightcnt(Integer weightcnt){this.weightcnt=weightcnt;}//Binding WeightCount in App
