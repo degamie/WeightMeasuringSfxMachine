@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 
 public class Main {
+    public Integer measure_segment=0;
     public Integer weightcnt;public View weight_view=null;public int weight_unit=0;
     public int weight_view=0;
     weightcnt=0;
