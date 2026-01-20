@@ -11,6 +11,7 @@ public class Main {
     public Integer getMeasure_segment(Integer measure_segment){return measure_segment;}//measureSegment's Fetching in App
     public void setMeasure_segment(Integer measure_segment){this.measure_segment=measure_segment;}//Binding measureSegment in App
     public String updateByMeasure_segment(Integer measure_segment){getMeasure_segment(measure_segment)+setMeasure_segment(measure_segment)+1;}//updating MeasureSegament in App
+    public String existsBymeasure_segment(Integer measure_segment){if(measure_segment.length!=0)getMeasure_segment(measure_segment);else getMeasure_segment(0);}//Checking Measure Segment in App
     public int weight_view=0;
     weightcnt=0;
     public void setWeightcnt(Integer weightcnt){this.weightcnt=weightcnt;}//Binding WeightCount in App
