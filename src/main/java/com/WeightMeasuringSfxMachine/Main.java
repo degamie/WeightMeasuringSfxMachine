@@ -9,6 +9,7 @@ public class Main {
     public Integer measure_segment=0;
     public Integer weightcnt;public View weight_view=null;public int weight_unit=0;
     public Integer getMeasure_segment(Integer measure_segment){return measure_segment;}//measureSegment's Fetching in App
+    public void setMeasure_segment(Integer measure_segment){this.measure_segment=measure_segment;}//Binding measureSegment in App   
     public int weight_view=0;
     weightcnt=0;
     public void setWeightcnt(Integer weightcnt){this.weightcnt=weightcnt;}//Binding WeightCount in App
