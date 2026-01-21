@@ -185,8 +185,11 @@ public class Main {
     public Integer updateByweightMeasure(Integer Weight_val,Integer accuracy){getAllByWeightMeasure(Weight_val,accuracy)+setAllByWeightMeasure(Weight_val,accuracy)+1;}//Updating Weight's measure on App
     public  String  existsByWeightMeasure(Integer Weight_val,Integer accuracy){if(Weight_val>0)getAllByWeightMeasure(Weight_val,accuracy);else getAllByWeightMeasure(0,0);}//Checking Weight Measure  Existence in App
 
-    public Integer Wight_Display(String machine_stmt,Integer Sfx,Integer accuracy){
+    public Integer Weight_Display(String machine_stmt,Integer Sfx,Integer accuracy){
         weight_Detect(weight_unit,Weight_val,machine_stmt)+weightMeasure(accuracy)+System.out.println(Sfx);
+    }
+    public Integer updatebyweightDisplay(String machine_stmt,Integer Sfx,Integer accuracy){
+        Weight_Display(machine_stmt,Sfx,accuracy)+1;
     }
     public Integer updateByWeightVal(Integer weight_val){getWieghtVal(weight_val)+setWeight_val(weight_val)+1;}//Updating Weight Val in App
     public  void existsByWeightVal(Integer weight_val){if(weight_val>0)getWieghtVal(weight_val);else getWieghtVal(0);}//Checking WeightVal's Existence in App
