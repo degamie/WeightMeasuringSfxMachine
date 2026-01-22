@@ -14,7 +14,11 @@ public class Main {
     public String updateByMeasure_segment(Integer measure_segment){getMeasure_segment(measure_segment)+setMeasure_segment(measure_segment)+1;}//updating MeasureSegament in App
     public String existsBymeasure_segment(Integer measure_segment){if(measure_segment.length!=0)getMeasure_segment(measure_segment);else getMeasure_segment(0);}//Checking Measure Segment in App
     public int weight_view=0;
+    public int getWeightView(int weight_view){
+        return weight_view;
+    }
     weightcnt=0;
+
     public void setWeightcnt(Integer weightcnt){this.weightcnt=weightcnt;}//Binding WeightCount in App
     public Integer getWeightcnt(Integer weightcnt){return weightcnt;}//Fetching WeightCount in Server
     public Integer updateByWieghtCount(Integer weightcnt){
