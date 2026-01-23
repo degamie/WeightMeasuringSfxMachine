@@ -1,4 +1,4 @@
-//WID(22/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1
+//WID(23/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -16,6 +16,7 @@ public class Main {
     public String updateByMeasure_segment(Integer measure_segment){getMeasure_segment(measure_segment)+setMeasure_segment(measure_segment)+1;}//updating MeasureSegament in App
     public String existsBymeasure_segment(Integer measure_segment){if(measure_segment.length!=0)getMeasure_segment(measure_segment);else getMeasure_segment(0);}//Checking Measure Segment in App
     public int weight_view=0;
+    public void setWeight_view(int weight_view){this.weight_view=weight_view;}//binding WeightView in App
     public int getWeightView(int weight_view){
         return weight_view;
     }
