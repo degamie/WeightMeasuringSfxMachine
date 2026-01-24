@@ -9,6 +9,7 @@ public class Main {
     public Integer measure_edge=0;
     public void setMeasure_edge(Integer measure_edge){this.measure_edge=measure_edge;}//Binding measure edge in App
     public Integer getMeasure_edge(Integer measure_edge){return measure_edge;}// Fetching MeasureEdge in App
+    public   Integer updateBymeaureEdge(Integer measure_edge){getMeasure_edge(measure_edge)+setMeasure_edge(measure_edge)+1;}//Measureedge's Update in App
     public Integer measure_segment=0;
     public Integer weightcnt;public View weight_view=null;public int weight_unit=0;
     public void setWeight_view(View weight_View){this.Weight_View=weight_View;}//binding WeightView in App
