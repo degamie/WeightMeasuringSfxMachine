@@ -23,6 +23,7 @@ public class Main {
     public int getWeightView(int weight_view){
         return weight_view;
     }
+    public void updateByweightView(int weight_view){getWeightView(weight_view)+setWeight_view(weight_view)+1;}//Updating WeightView in App
     weightcnt=0;
 
     public void setWeightcnt(Integer weightcnt){this.weightcnt=weightcnt;}//Binding WeightCount in App
