@@ -1,4 +1,4 @@
-//WID(25/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1
+//WID(25/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -47,7 +47,8 @@ public class Main {
     }
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
-    public Main(Sfx,machine_stmt,Weight_val,weight_unit){
+    public Main(Sfx,machine_stmt,Weight_val,weight_unit,weight_menu){
+        this.weight_menu=weight_menu;
         this.Sfx=Sfx;
         this.machine_stmt=machine_stmt;
         this.weight_unit=weight_unit;
