@@ -1,4 +1,4 @@
-//WID(26/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1C
+//WID(27/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1C
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 
 public class Main {
+    public Main(Integer measure_edge){
+        this.measure_edge=measure_edge;
+    }
     public Integer measure_edge=0;
     public void setMeasure_edge(Integer measure_edge){this.measure_edge=measure_edge;}//Binding measure edge in App
     public Integer getMeasure_edge(Integer measure_edge){return measure_edge;}// Fetching MeasureEdge in App
