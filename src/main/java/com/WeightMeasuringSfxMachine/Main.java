@@ -1,4 +1,4 @@
-//WID(27/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1C
+//WID(29/1/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -214,6 +214,7 @@ public class Main {
     }
     public Integer updateByWeightVal(Integer weight_val){getWieghtVal(weight_val)+setWeight_val(weight_val)+1;}//Updating Weight Val in App
     public  void existsByWeightVal(Integer weight_val){if(weight_val>0)getWieghtVal(weight_val);else getWieghtVal(0);}//Checking WeightVal's Existence in App
+    public String getWeightVal(Integer WeightVal){return WeightVal;}//Fetching WeightVal in App
     }
 //        public static void main(String[] args) {
 
