@@ -1,4 +1,4 @@
-//WID(1/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1
+//WID(1/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -6,7 +6,9 @@ import java.util.ArrayList;
 
 
 public class Main {
-    public Main(Integer measure_edge){
+    public View weight_View;
+    public Main(Integer measure_edge,View weight_View){
+        this.weight_View=weight_View;
         this.weightcnt=weightcnt;
         this.weightcnt=weightcnt;
         this.weight_view=weight_view;
@@ -58,13 +60,7 @@ public class Main {
     }
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
-    public Main(Sfx,machine_stmt,Weight_val,weight_unit,weight_menu){
-        this.weight_menu=weight_menu();
-        this.weight_menu=weight_menu;
-        this.Sfx=Sfx;
-        this.machine_stmt=machine_stmt;
-        this.weight_unit=weight_unit;
-    }
+
     public void existsByweightCnt(Integer weightcnt){if(weightcnt>0)getWeightcnt(weightcnt);else getWeightcnt(0);}//Chekcing weightCnt's Ex
     public void setWeight_menu(ArrayList<String>weight_menu){this.weight_menu=weight_menu;}//Bidning Wieght Menu
     public void updateByWeightMenu(ArrayList<String>weight_menu){getweight_menu(weight_menu)+setWeight_menu(weight_menu)+1;}//Updating WeightMenu in App
