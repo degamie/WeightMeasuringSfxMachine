@@ -9,6 +9,7 @@ import java.util.ArrayList;
 public class Main {
     public View weight_View;
     public Main(Integer measure_edge,View weight_View){
+        this.weight_menu=weight_menu;
         this.sfx=sfx;
         this.measure_segment=measure_segment;
         this.weight_View=weight_View;
