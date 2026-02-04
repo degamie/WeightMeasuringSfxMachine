@@ -1,4 +1,4 @@
-//WID(3/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1
+//WID(4/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -25,6 +25,7 @@ public class Main {
     public void existsBymeasureEdge(Integer measure_edge)={if(measure_edge>0)getMeasure_edge(measure_edge);else getMeasure_edge(0);}//Checking Measure edge in App
     public Integer measure_segment=0;
     public Integer weightcnt;public View weight_view=null;public int weight_unit=0;
+    public int getWeight_unit(int weight_unit){return weight_unit;}
     public void setWeight_view(View weight_View){this.Weight_View=weight_View;}//binding WeightView in App
     public Integer getMeasure_segment(Integer measure_segment){return measure_segment;}//measureSegment's Fetching in App
     public void setMeasure_segment(Integer measure_segment){this.measure_segment=measure_segment;}//Binding measureSegment in App
