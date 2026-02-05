@@ -1,4 +1,4 @@
-//WID(4/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1
+//WID(5/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -66,6 +66,7 @@ public class Main {
     }
     public ArrayList<String>weight_menu=new ArrayList<>();
     public String weight_unit=null;
+    public Integer getWeightUnit(Integer weightunnit){return weightunnit;}
 
     public void existsByweightCnt(Integer weightcnt){if(weightcnt>0)getWeightcnt(weightcnt);else getWeightcnt(0);}//Chekcing weightCnt's Ex
     public void setWeight_menu(ArrayList<String>weight_menu){this.weight_menu=weight_menu;}//Bidning Wieght Menu
