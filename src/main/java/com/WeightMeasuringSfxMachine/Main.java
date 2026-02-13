@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class Main {
     public Main main=new Main();
+    public Main updateByMain(Main main){getMain(main)+setMain(main)+1;}
     public void setMain(Main main){this.main=main;}
     public Main getMain(Main main){return main;}//Fetching main in App
     public View weight_View;
