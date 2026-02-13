@@ -1,4 +1,4 @@
-//WID(12/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1
+//WID(13/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -24,6 +24,7 @@ public class Main {
         this.weight_view=weight_view;
         this.measure_edge=measure_edge;
     }
+    public void existsByView(View view){if (view!=null)getViews(view);else getViews(null);}//Checking View in App
     public void existsByweightMenu(Menu weightMenu){
         if(weightMenu!=null)getweight_menu(weight_menu);
         else getweight_menu(null);
