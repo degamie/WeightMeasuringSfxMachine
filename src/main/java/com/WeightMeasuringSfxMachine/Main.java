@@ -1,4 +1,4 @@
-//WID(13/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1
+//WID(14/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -30,6 +30,7 @@ public class Main {
         if(weightMenu!=null)getweight_menu(weight_menu);
         else getweight_menu(null);
     }
+    public void existsByMain(Main main){if(main!=null)getMain(main);else getMain(null);}//Checking Main's Existence iN App
     public void updateByweightmenu(Menu weightmenu){getweight_menu(weight_menu)+setWeight_menu(weight_menu)+1;}//Updating WeightMenu in App
     public void setWeightMenu(Menu weightMenu){this.weight_menu=weight_menu;}//Binding WeightMenu in App
     public Menu getWeightMenu(Menu weightMenu){return weightMenu;}//Fethcing WeightMenu in App
