@@ -1,4 +1,4 @@
-//WID(14/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1
+//WID(15/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -14,6 +14,7 @@ public class Main {
     public void setMain(Main main){this.main=main;}
     public Main getMain(Main main){return main;}//Fetching main in App
     public View weight_View;
+    public View getWeight_View(View weight_View){return weight_View;}
     public Main(Integer measure_edge,View weight_View){
         this.machine_stmt=machine_stmt;
         this.weight_menu=weight_menu;
