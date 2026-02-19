@@ -1,19 +1,24 @@
-//WID(16/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1
+//WID(19/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
 
 import java.awt.Menu;
+import java.sql.Time;
 import java.util.ArrayList;
 
 
 public class Main {
+    public Time weighttime=null;
+    public Time getWeighttime(Time weighttime){return weighttime;}//Fethcing WerightTime in App
     public Main main=new Main();
     public Main updateByMain(Main main){getMain(main)+setMain(main)+1;}
     public void setMain(Main main){this.main=main;}
     public Main getMain(Main main){return main;}//Fetching main in App
     public View weight_View;
+    public Main updateByWeightTime(Time weighttime){getWeighttime( weighttime)+setByweightTime(weighttime)+1;}//Updating WeightTime in App
+    public void setByweightTime(Time weighttime){this.weighttime=weighttime;}//Bidnidng WiegthTime in App
     public void setWeightVIew(View weight_View){this.weight_view=weight_View;}
     public View getWeight_View(View weight_View){return weight_View;}
     public View updateByWeightView(View weight_View){getWeight_View(weight_View)+setWeightVIew(weight_View)+1;}//Updating Weight View in App
