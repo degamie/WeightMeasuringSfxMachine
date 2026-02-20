@@ -1,4 +1,4 @@
-//WID(20/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1    
+//WID(20/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class Main {
     public Time weighttime=null;
+    public void setWeighttime(Time weighttime){this.weighttime=weighttime;}//Binding WeightTime in App
     public Time getWeighttime(Time weighttime){return weighttime;}//Fethcing WerightTime in App
     public Main main=new Main();
     public Main updateByMain(Main main){getMain(main)+setMain(main)+1;}
