@@ -1,4 +1,4 @@
-//WID(23/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID(23/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class Main {
     public Integer WieghtUnit;
+    public WieghtUnit updateByWeightUnit(Integer WieghtUnit){getWeight_unit(weight_unit)+setWeight_unit(weight_unit)+1;}//Updating WeightUnit in App
     public void existsByWeightUnit(Integer WieghtUnit){if(weight_unit!=0)getWeight_unit(weight_unit);else getWeight_unit(0);}
     public void setWieghtUnit(Integer wieghtUnit){this.WieghtUnit=wieghtUnit;}
     public Integer getWeightUnit(Integer wieghtUnit){return WieghtUnit;}
