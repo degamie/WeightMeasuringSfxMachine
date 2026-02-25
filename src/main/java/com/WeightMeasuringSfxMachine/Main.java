@@ -1,4 +1,4 @@
-//WID(25/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID(25/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,9 @@ import java.util.ArrayList;
 
 public class Main {
     public Integer weightSerailNum=0;
+    public Integer updateBySerialNum(Integer weightSerailNum){
+       getWeightSerailNum(weightSerailNum)+setWeightSerailNum(weightSerailNum)+1;
+    }
     public void setWeightSerailNum(Integer weightSerailNum){this.weightSerailNum=weightSerailNum;}//Bidning WeightSerialNum in App
     public Integer getWeightSerailNum(Integer weightSerailNum){return weightSerailNum;}//Fethcing weightSerailNum in App
     public Integer WieghtUnit;
