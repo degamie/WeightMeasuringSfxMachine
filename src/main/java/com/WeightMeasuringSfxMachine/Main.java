@@ -1,4 +1,4 @@
-//WID(25/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID(25/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 public class Main {
     public Integer weightSerailNum=0;
+    public void existsBySerialNum(Integer weightSerailNum){if(weightSerailNum>0)getWeightSerailNum(weightSerailNum);else getWeightSerailNum(0);}//Checking WeightSerialNum's Existence in App #1
     public Integer updateBySerialNum(Integer weightSerailNum){
        getWeightSerailNum(weightSerailNum)+setWeightSerailNum(weightSerailNum)+1;
     }
