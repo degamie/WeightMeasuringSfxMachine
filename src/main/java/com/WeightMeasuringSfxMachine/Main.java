@@ -1,4 +1,4 @@
-//WID(26/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1C
+//WID(26/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1    
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,8 +11,9 @@ import java.util.ArrayList;
 
 public class Main {
     public Integer weightbatteryVal=0;
+    public Integer updateByBatteryVal(Integer weightbatteryVal){getWeightbatteryVal(weightbatteryVal)+setWeightbatteryVal(weightbatteryVal);}//Updating BatteryVal in App
     public void setWeightbatteryVal(Integer weightbatteryVal){this.weightbatteryVal=weightbatteryVal;}//Bidning WeigthBatteryLvl in App
-    public Integer getweightbatteryVal(Integer weightbatteryVal){return weightbatteryVal;}// Fetching weightbatteryVal in App
+    public Integer getWeightbatteryVal(Integer weightbatteryVal){return weightbatteryVal;}// Fetching weightbatteryVal in App
     public Integer weightSerailNum=0;
     public void existsBySerialNum(Integer weightSerailNum){if(weightSerailNum>0)getWeightSerailNum(weightSerailNum);else getWeightSerailNum(0);}//Checking WeightSerialNum's Existence in App #1
     public Integer updateBySerialNum(Integer weightSerailNum){
