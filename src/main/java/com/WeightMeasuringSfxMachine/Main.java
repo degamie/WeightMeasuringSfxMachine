@@ -1,4 +1,4 @@
-//WID(26/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1    
+//WID(27/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -7,10 +7,12 @@ import javax.swing.text.View;
 import java.awt.Menu;
 import java.sql.Time;
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
     public Integer weightbatteryVal=0;
+    public List<Main> existsBYBatteryVal(Integer weightbatteryVal){if(weightbatteryVal!=null)getWeightbatteryVal(weightbatteryVal);else getWeightbatteryVal(null);}
     public Integer updateByBatteryVal(Integer weightbatteryVal){getWeightbatteryVal(weightbatteryVal)+setWeightbatteryVal(weightbatteryVal);}//Updating BatteryVal in App
     public void setWeightbatteryVal(Integer weightbatteryVal){this.weightbatteryVal=weightbatteryVal;}//Bidning WeigthBatteryLvl in App
     public Integer getWeightbatteryVal(Integer weightbatteryVal){return weightbatteryVal;}// Fetching weightbatteryVal in App
