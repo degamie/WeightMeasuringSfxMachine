@@ -1,4 +1,4 @@
-//WID(01/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID(01/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -12,6 +12,10 @@ import java.util.List;
 
 public class Main {
     public String weigthName=null;
+    public void existsByWeightName(String weigthName){
+        if(weigthName!=null)getWeigthName(weigthName);
+        else getWeigthName(null);
+    }
     public void updateByWeightName(String weigthName){getWeigthName(weigthName)+setWeightName(weigthName)+1;}//Updating WeightName In App
     public void setWeightName(String WeightName){this.WeightName=WeightName;}//Binding WeightName in App
     public String getWeigthName(String WeightName){return  WeightName;}//Fetching WeightName in App
