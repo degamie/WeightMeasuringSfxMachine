@@ -1,4 +1,4 @@
-//WID(03/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID(03/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public String weightText=null;
     public void main(String[] args){
         System.out.println(Thread.currentThread().getName());
     }
