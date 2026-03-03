@@ -1,4 +1,4 @@
-//WID(02/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1cc   C
+//WID(03/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -10,7 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Main {
+public class Main extends Thread{
+    public void main(String[] args){
+        System.out.println(Thread.currentThread().getName());
+    }
     public Integer weightNum=0;
     public void setWeightNum(int weightNum){this.weightNum=weightNum;}//Binding WeightNum in App
     public int getweightNum(int weightNum){return  weightNum;}//Fethcing WeightNum in App
