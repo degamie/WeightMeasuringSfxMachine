@@ -1,4 +1,4 @@
-//WID(11/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1
+//WID(13/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,7 +11,9 @@ import java.util.List;
 
 
 public class Main extends Thread{
-    public Integer existsByBatteryId(Integer batteryId){
+    public void setBatteryName(String batteryName){this.batteryName=batteryName;}
+    public String batteryName=null;
+    public void existsByBatteryId(Integer batteryId){
         if(batteryId!=0)getBatteryId(batteryId);
         else getBatteryId(0);
     }
