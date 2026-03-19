@@ -1,4 +1,4 @@
-//WID(19/2/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1
+//WID(19/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -7,16 +7,87 @@ import javax.swing.text.View;
 import java.awt.Menu;
 import java.sql.Time;
 import java.util.ArrayList;
+import java.util.List;
 
 
-public class Main {
+public class Main extends Thread{
+    public Main updateByWeightText(String  WieghtText){getWeighttext(weightText)+setWeightText(weightText)+1;}
+
+    private  String  getWeighttext(String weightText) {return weightText;}
+
+
+    public void setWeightText(String weightText){this.weightText=weightText;}//Binding WeightTextIn App
+    public void existsByweightName(String WeightName){if (WeightName!=null)getWeigthName(weigthName);else getWeigthName(null);}
+    public String updateBYBatteryName(String BatteryName){getBatteryName(BatteryName)+setBatteryName(BatteryName)+1;}//Updating BatteryName in App
+    public String getBatteryName(String BatteryName){return BatteryName;}//Fetchuing BatteryName in App
+    public void setBatteryName(String batteryName){this.batteryName=batteryName;}
+    public String batteryName=null;
+    public void existsByBatteryId(Integer batteryId){
+        if(batteryId!=0)getBatteryId(batteryId);
+        else getBatteryId(0);
+    }
+    public Integer updateByBatteryId(Integer BatteryId){getBatteryId(batteryId)+setBatteryId(batteryId)+1;}//updating BatterYId in App
+    public void setBatteryId(batteryId){this.batteryId=batteryId;}
+    public Integer getBatteryId(batteryId {
+        return batteryId;
+    }
+
+    public Integer batteryId=0;
+    public Main existsBYMain(Main main){
+        if(main!=null)getMain(main);
+        else getMain(null);
+    }
+    public void updateByMain(Main main){getMain(main)+setMain(main)+1;}//Updating  Main App
+    public void setMain(Main main){this.main=main;}//binding Main App
+    public Main getMain(Main main){return main;}//Fethcing Main In App
+    public Main main;//Obj declare
+    public String weightText=null;
+    //public String getWeigthName(String weigthName){return  weigthName;}
+    public void main(String[] args){
+        System.out.println(Thread.currentThread().getName());
+    }
+    public Integer weightNum=0;
+    public void setWeightNum(int weightNum){this.weightNum=weightNum;}//Binding WeightNum in App
+    public int getweightNum(int weightNum){return  weightNum;}//Fethcing WeightNum in App
+    public String weigthName=null;
+    public void existsByWeightName(String weigthName){
+        if(weigthName!=null)getWeigthName(weigthName);
+        else getWeigthName(null);
+    }
+    public void updateByWeightName(String weigthName){getWeigthName(weigthName)+setWeightName(weigthName)+1;}//Updating WeightName In App
+    public void setWeightName(String WeightName){this.WeightName=WeightName;}//Binding WeightName in App
+    public String getWeigthName(String WeightName){return  WeightName;}//Fetching WeightName in App
+    public Integer weightbatteryVal=0;
+    public List<Main> existsBYBatteryVal(Integer weightbatteryVal){if(weightbatteryVal!=null)getWeightbatteryVal(weightbatteryVal);else getWeightbatteryVal(null);}
+    public Integer updateByBatteryVal(Integer weightbatteryVal){getWeightbatteryVal(weightbatteryVal)+setWeightbatteryVal(weightbatteryVal);}//Updating BatteryVal in App
+    public void setWeightbatteryVal(Integer weightbatteryVal){this.weightbatteryVal=weightbatteryVal;}//Bidning WeigthBatteryLvl in App
+    public Integer getWeightbatteryVal(Integer weightbatteryVal){return weightbatteryVal;}// Fetching weightbatteryVal in App
+    public Integer weightSerailNum=0;
+    public void existsBySerialNum(Integer weightSerailNum){if(weightSerailNum>0)getWeightSerailNum(weightSerailNum);else getWeightSerailNum(0);}//Checking WeightSerialNum's Existence in App #1
+    public Integer updateBySerialNum(Integer weightSerailNum){
+       getWeightSerailNum(weightSerailNum)+setWeightSerailNum(weightSerailNum)+1;
+    }
+    public void setWeightSerailNum(Integer weightSerailNum){this.weightSerailNum=weightSerailNum;}//Bidning WeightSerialNum in App
+    public Integer getWeightSerailNum(Integer weightSerailNum){return weightSerailNum;}//Fethcing weightSerailNum in App
+    public Integer WieghtUnit;
+    public WieghtUnit updateByWeightUnit(Integer WieghtUnit){getWeight_unit(weight_unit)+setWeight_unit(weight_unit)+1;}//Updating WeightUnit in App
+    public void existsByWeightUnit(Integer WieghtUnit){if(weight_unit!=0)getWeight_unit(weight_unit);else getWeight_unit(0);}
+    public void setWieghtUnit(Integer wieghtUnit){this.WieghtUnit=wieghtUnit;}
+    public Integer getWeightUnit(Integer wieghtUnit){return WieghtUnit;}
     public Time weighttime=null;
+    public void existsByWieghtTime(Time weighttime){
+        if(weighttime!=null)getWeighttime( weighttime );
+        else getWeighttime( null );
+    }
+    public Time updateByWeightTime(Time weighttime){getWeighttime( weighttime )+setWeighttime(weighttime)+1;}//updating WeightTime inApp
+    public void setWeighttime(Time weighttime){this.weighttime=weighttime;}//Binding WeightTime in App
     public Time getWeighttime(Time weighttime){return weighttime;}//Fethcing WerightTime in App
     public Main main=new Main();
     public Main updateByMain(Main main){getMain(main)+setMain(main)+1;}
     public void setMain(Main main){this.main=main;}
     public Main getMain(Main main){return main;}//Fetching main in App
     public View weight_View;
+    public void existsByManiN(Main main){if(main!=null)getMain(main);else getMain(null);}//Checking Main's Existence in app
     public Main updateByWeightTime(Time weighttime){getWeighttime( weighttime)+setByweightTime(weighttime)+1;}//Updating WeightTime in App
     public void setByweightTime(Time weighttime){this.weighttime=weighttime;}//Bidnidng WiegthTime in App
     public void setWeightVIew(View weight_View){this.weight_view=weight_View;}
@@ -34,6 +105,7 @@ public class Main {
         this.weight_view=weight_view;
         this.measure_edge=measure_edge;
     }
+    public Integer getWeightView(Integer WeightView){return WeightView;}//Fetching WeightView in App
     public void existsByView(View view){if (view!=null)getViews(view);else getViews(null);}//Checking View in App
     public void existsByweightMenu(Menu weightMenu){
         if(weightMenu!=null)getweight_menu(weight_menu);
