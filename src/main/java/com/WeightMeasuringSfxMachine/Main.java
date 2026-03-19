@@ -1,4 +1,4 @@
-//WID(16/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1
+//WID(19/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,18 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public void existsByWeightText(String WeighText){
+        if(weightText!=null){
+            getWeighttext(weightText);
+        }
+        else getWeighttext(null);
+    }
+
+    public Main updateByWeightText(String  WieghtText){getWeighttext(weightText)+setWeightText(weightText)+1;}
+
+    private  String  getWeighttext(String weightText) {return weightText;}
+
+
     public void setWeightText(String weightText){this.weightText=weightText;}//Binding WeightTextIn App
     public void existsByweightName(String WeightName){if (WeightName!=null)getWeigthName(weigthName);else getWeigthName(null);}
     public String updateBYBatteryName(String BatteryName){getBatteryName(BatteryName)+setBatteryName(BatteryName)+1;}//Updating BatteryName in App
