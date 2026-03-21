@@ -1,4 +1,4 @@
-//WID(21/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1
+//WID(21/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,10 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public String WeightMachine=null;
+    public int weight_unit=0;
+
+
      public String weightTime=null;
     public void setWeightTime(String weightTime){this.weightTime=weightTime;}
     public void existsByexitsByWeighttime(String  WeightTime){
@@ -139,7 +143,7 @@ public class Main extends Thread{
     public   Integer updateBymeaureEdge(Integer measure_edge){getMeasure_edge(measure_edge)+setMeasure_edge(measure_edge)+1;}//Measureedge's Update in App
     public void existsBymeasureEdge(Integer measure_edge)={if(measure_edge>0)getMeasure_edge(measure_edge);else getMeasure_edge(0);}//Checking Measure edge in App
     public Integer measure_segment=0;
-    public Integer weightcnt;public View weight_view=null;public int weight_unit=0;
+    public Integer weightcnt;public View weight_view=null;
     public int getWeight_unit(int weight_unit){return weight_unit;}
     public void setWeight_view(View weight_View){this.Weight_View=weight_View;}//binding WeightView in App
     public Integer getMeasure_segment(Integer measure_segment){return measure_segment;}//measureSegment's Fetching in App
