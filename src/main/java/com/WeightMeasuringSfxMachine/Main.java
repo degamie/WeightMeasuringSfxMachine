@@ -1,4 +1,4 @@
-//WID(24/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1
+//WID(24/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public void setMain(Main main){this.main=main;}
     public Main main;
     public String updateByWeighttime(String WeightTime){setWeighttime(weighttime)+getWeighttime(weighttime)+1;}//Updating WeightTime in App
     public void existsByweightMachine(String WeightMachine){
@@ -42,6 +43,7 @@ public class Main extends Thread{
         }
         else getWeighttext(null);
     }
+//    public void existsByWeightText(String  WieghtText){getWeighttext(weightText)+setWeightText(weightText)+1;}
 
     public Main updateByWeightText(String  WieghtText){getWeighttext(weightText)+setWeightText(weightText)+1;}
 
@@ -65,6 +67,7 @@ public class Main extends Thread{
     }
 
     public Integer batteryId=0;
+    public Integer getbatteryId(Integer batteryId){return batteryId;}
     public Main existsBYMain(Main main){
         if(main!=null)getMain(main);
         else getMain(null);
