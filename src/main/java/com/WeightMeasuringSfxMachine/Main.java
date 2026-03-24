@@ -1,4 +1,4 @@
-//WID(24/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1
+//WID(24/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -82,6 +82,12 @@ public class Main extends Thread{
         System.out.println(Thread.currentThread().getName());
     }
     public Integer weightNum=0;
+    public void updateByWeightNum(int weightNum){
+        switch (getweightNum(weightNum) + setWeightNum(weightNum) + 1) {
+            default ->
+                    throw new IllegalStateException("Unexpected value: " + getweightNum(weightNum) + setWeightNum(weightNum) + 1);
+        }
+    }
     public void setWeightNum(int weightNum){this.weightNum=weightNum;}//Binding WeightNum in App
     public int getweightNum(int weightNum){return  weightNum;}//Fethcing WeightNum in App
     public String weigthName=null;
