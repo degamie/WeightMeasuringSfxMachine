@@ -1,4 +1,4 @@
-//WID(25/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1
+//WID(26/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    private String getWeightMachine(String WeightMachine) {return WeightMachine;}
     public void updateByWeightMachine(String WeightMachine){getWeightMachine(WeightMachine)+SetWeightMachine(WeightMachine)+1;}
     public void setMain(Main main){this.main=main;}
     public Main main;
@@ -25,7 +26,7 @@ public class Main extends Thread{
 
     private   void SetWeightMachine(String WeightMachine) {this.WeightMachine=WeightMachine; }
 
-    private String getWeightMachine() {}
+
     public String WeightMachine=null;
     public int weight_unit=0;
      public String weightTime=null;
