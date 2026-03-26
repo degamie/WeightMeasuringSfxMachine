@@ -1,4 +1,4 @@
-//WID(26/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1
+//WID(26/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -166,6 +166,7 @@ public class Main extends Thread{
     public void existsBymeasureEdge(Integer measure_edge)={if(measure_edge>0)getMeasure_edge(measure_edge);else getMeasure_edge(0);}//Checking Measure edge in App
     public Integer measure_segment=0;
     public Integer weightcnt;public View weight_view=null;
+    public void updateByWeightUnit(int weight_unit){getWeightUnit(weight_unit)+setWeightUnit(weight_unit)+1;}
     public int getWeight_unit(int weight_unit){return weight_unit;}
     public void setWeight_view(View weight_View){this.Weight_View=weight_View;}//binding WeightView in App
     public Integer getMeasure_segment(Integer measure_segment){return measure_segment;}//measureSegment's Fetching in App
@@ -361,6 +362,10 @@ public class Main extends Thread{
     public Integer updateByWeightVal(Integer weight_val){getWieghtVal(weight_val)+setWeight_val(weight_val)+1;}//Updating Weight Val in App
     public  void existsByWeightVal(Integer weight_val){if(weight_val>0)getWieghtVal(weight_val);else getWieghtVal(0);}//Checking WeightVal's Existence in App
     public String getWeightVal(Integer WeightVal){return WeightVal;}//Fetching WeightVal in App
+    }
+
+    public void setWeightUnit(int weightUnit) {
+        this.weightUnit = weightUnit;
     }
 //        public static void main(String[] args) {
 
