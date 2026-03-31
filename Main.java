@@ -1,4 +1,4 @@
-//WID(20/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1
+//WID(01/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,32 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public void existsByweightline(int weightline){
+        if(weightline!=0)getWeightline(weightline);
+        else getWeightline(0);
+    }
+    public int  updateByweightline(int weightline){getWeightline(weightline)+setWeightline(weightline)+1;}//updating WeightLine in App
+    public int getWeightline(int weightline){return weightline;}
+    public int weightline;
+    public void setWeightline(int weightline){this.weightline=weightline;}
+    private String getWeightMachine(String WeightMachine) {return WeightMachine;}
+    public void updateByWeightMachine(String WeightMachine){getWeightMachine(WeightMachine)+SetWeightMachine(WeightMachine)+1;}
+    public void setMain(Main main){this.main=main;}
+    public Main main;
+    public String updateByWeighttime(String WeightTime){setWeighttime(weighttime)+getWeighttime(weighttime)+1;}//Updating WeightTime in App
+    public void existsByweightMachine(String WeightMachine){
+        if(WeightMachine!=null)getWeightMachine(WeightMachine);
+        else getWeightMachine(null);
+    }
+    public String  updateByWeightMagchine(String WeightMachine){
+        getWeightMachine()+SetWeightMachine(WeightMachine)+1;
+    }
+//public int getWeight_unit(int weight_unit){return weight_unit;}
+    private   void SetWeightMachine(String WeightMachine) {this.WeightMachine=WeightMachine; }
+    public String WeightMachine=null;
+    public int weight_unit=0;
+     public String weightTime=null;
+    public void setWeightTime(String weightTime){this.weightTime=weightTime;}
     public void existsByexitsByWeighttime(String  WeightTime){
         if(WeightTime!=null)getWeightTine(WeightTime);
         else getWeighttime(WeightTime);
@@ -25,6 +51,7 @@ public class Main extends Thread{
         }
         else getWeighttext(null);
     }
+//    public void existsByWeightText(String  WieghtText){getWeighttext(weightText)+setWeightText(weightText)+1;}
 
     public Main updateByWeightText(String  WieghtText){getWeighttext(weightText)+setWeightText(weightText)+1;}
 
@@ -46,8 +73,10 @@ public class Main extends Thread{
     public Integer getBatteryId(batteryId {
         return batteryId;
     }
+    public String getWeightText(String weightText){return weightText;}
 
     public Integer batteryId=0;
+    public Integer getbatteryId(Integer batteryId){return batteryId;}
     public Main existsBYMain(Main main){
         if(main!=null)getMain(main);
         else getMain(null);
@@ -62,6 +91,12 @@ public class Main extends Thread{
         System.out.println(Thread.currentThread().getName());
     }
     public Integer weightNum=0;
+    public void updateByWeightNum(int weightNum){
+        switch (getweightNum(weightNum) + setWeightNum(weightNum) + 1) {
+            default ->
+                    throw new IllegalStateException("Unexpected value: " + getweightNum(weightNum) + setWeightNum(weightNum) + 1);
+        }
+    }
     public void setWeightNum(int weightNum){this.weightNum=weightNum;}//Binding WeightNum in App
     public int getweightNum(int weightNum){return  weightNum;}//Fethcing WeightNum in App
     public String weigthName=null;
@@ -137,7 +172,8 @@ public class Main extends Thread{
     public   Integer updateBymeaureEdge(Integer measure_edge){getMeasure_edge(measure_edge)+setMeasure_edge(measure_edge)+1;}//Measureedge's Update in App
     public void existsBymeasureEdge(Integer measure_edge)={if(measure_edge>0)getMeasure_edge(measure_edge);else getMeasure_edge(0);}//Checking Measure edge in App
     public Integer measure_segment=0;
-    public Integer weightcnt;public View weight_view=null;public int weight_unit=0;
+    public Integer weightcnt;public View weight_view=null;
+    public void updateByWeightUnit(int weight_unit){getWeightUnit(weight_unit)+setWeightUnit(weight_unit)+1;}
     public int getWeight_unit(int weight_unit){return weight_unit;}
     public void setWeight_view(View weight_View){this.Weight_View=weight_View;}//binding WeightView in App
     public Integer getMeasure_segment(Integer measure_segment){return measure_segment;}//measureSegment's Fetching in App
@@ -333,6 +369,10 @@ public class Main extends Thread{
     public Integer updateByWeightVal(Integer weight_val){getWieghtVal(weight_val)+setWeight_val(weight_val)+1;}//Updating Weight Val in App
     public  void existsByWeightVal(Integer weight_val){if(weight_val>0)getWieghtVal(weight_val);else getWieghtVal(0);}//Checking WeightVal's Existence in App
     public String getWeightVal(Integer WeightVal){return WeightVal;}//Fetching WeightVal in App
+    }
+
+    public void setWeightUnit(int weightUnit) {
+        this.weightUnit = weightUnit;
     }
 //        public static void main(String[] args) {
 
