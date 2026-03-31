@@ -1,4 +1,4 @@
-//WID(31/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1
+//WID(31/03/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,10 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public void existsByweightline(int weightline){
+        if(weightline!=0)getWeightline(weightline);
+        else getWeightline(0);
+    }
     public int  updateByweightline(int weightline){getWeightline(weightline)+setWeightline(weightline)+1;}//updating WeightLine in App
     public int getWeightline(int weightline){return weightline;}
     public int weightline;
