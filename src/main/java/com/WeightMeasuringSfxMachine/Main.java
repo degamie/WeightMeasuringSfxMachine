@@ -1,4 +1,4 @@
-//WID(02/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1
+//WID(02/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -49,7 +49,7 @@ public class Main extends Thread{
     }
 
     public String  getWeightTine(String weightTime) {return weightTime; }
-
+public void updatebyweight_unit(int weight_unit){getWeight_Unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//binding WeightUnit in App
 
     public void existsByWeightText(String WeighText){
         if(weightText!=null){
