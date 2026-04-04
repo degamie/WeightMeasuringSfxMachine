@@ -1,4 +1,4 @@
-//WID(03/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1
+//WID(04/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,14 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public int updateByweightScale(int weightScale){getWeightScale(weightScale)+setWeightScale(weightScale)+1;}//updating WieghtSclae in App
+
+    public void setWeightScale(int weightScale) {
+        this.weightScale=weightScale;
+
+    }
+
+
     public void setweightScale(int weightScale){this.weightScale=weightScale;}//Binding WeightScale in App
     public int weightScale;
     public int getWeightScale(int weightScale){return  weightScale;}//Fethcing WeightScale in  App
