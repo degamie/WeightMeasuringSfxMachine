@@ -1,4 +1,4 @@
-//WID(06/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/1  .1  
+//WID(06/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/1  .1/1c   
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public void setSfx(int Sfx){this.Sfx=Sfx;}//Binding  Sfx in App
     public int Sfx=0;
     public int getSfx(int sfx){return  sfx;}
     public void existsByweightScale(int weightScale){
