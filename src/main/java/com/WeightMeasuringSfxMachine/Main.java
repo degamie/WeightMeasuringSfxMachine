@@ -1,4 +1,4 @@
-//WID(08/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/11.1   
+//WID(09/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/11.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.List;
 
 
 public class Main extends Thread{
+    public void existsByWeightEdge(float weightedge){getWeightedge(weightedge)+setWeightedge(weightedge)+1;}//Updating WeightEdge in App
     public float updateByWeightEdge(float weightedge){getWeightedge(weightedge)+setWeightedge(weightedge)+1;}//updating WeightEdge in App
     public void setWeightedge(float weightedge){this.weightedge=weightedge;}
     public float getWeightedge(float weightedge){return weightedge;}
@@ -296,7 +297,7 @@ public void updatebyweight_unit(int weight_unit){getWeight_Unit(weight_unit)+set
     public void existsbyMachineStmt(Integer machine_stmt){
         if(machine_stmt>0)getMachine_stmt(machine_stmt);
         else getMachine_stmt(0);
-    }   
+    }
 
     public Integer Weight_val=0;
      public Integer getWieghtVal(Integer Weight_val){
