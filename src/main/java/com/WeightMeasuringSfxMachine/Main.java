@@ -1,4 +1,4 @@
-//WID(09/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/11.1.1.1x  
+//WID(11/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/11.1.1.1.1s
 
 package com.WeightMeasuringSfxMachine;
 
@@ -16,7 +16,9 @@ public class Main extends Thread{
     public void setWeightedge(float weightedge){this.weightedge=weightedge;}
     public float getWeightedge(float weightedge){return weightedge;}
     public float weightedge;
-
+    public void existsBysfx(int sfx){
+        if(sfx!=0)getSfx(sfx);
+        else getSfx(0);}
 public void updateBysfx(int sfx){
     getSfx(sfx)+setSfx(sfx)+1;
 }
