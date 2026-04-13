@@ -1,4 +1,4 @@
-//WID(13/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/11.1.1.1.1s/1
+//WID(13/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/11.1.1.1.1s/1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -10,7 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Main extends Thread{
+public class    Main extends Thread{
+    public void setweightlight(int weightlight){this.weightlight=weightlight;}
     public int weightlight=0;
     public void existsByWeightEdge(float weightedge){getWeightedge(weightedge)+setWeightedge(weightedge)+1;}//Updating WeightEdge in App
     public float updateByWeightEdge(float weightedge){getWeightedge(weightedge)+setWeightedge(weightedge)+1;}//updating WeightEdge in App
