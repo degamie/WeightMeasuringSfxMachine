@@ -1,4 +1,4 @@
-//WID(16/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.1.1/11.1.1.1.1s/1.1.1.1.1
+//WID(17/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C
 
 package com.WeightMeasuringSfxMachine;
 
@@ -61,6 +61,10 @@ public void updateBysfx(int sfx){
     public void existsByweightline(int weightline){
         if(weightline!=0)getWeightline(weightline);
         else getWeightline(0);
+    }
+    public int existsByWeighttMachine(String WeightMachine){
+        if(WeightMachine!=null)getWeightMachine(WeightMachine);
+        else getWeightMachine( null );
     }
     public int  updateByweightline(int weightline){getWeightline(weightline)+setWeightline(weightline)+1;}//updating WeightLine in App
     public int getWeightline(int weightline){return weightline;}
