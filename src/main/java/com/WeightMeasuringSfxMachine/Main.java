@@ -1,4 +1,4 @@
-//WID(28/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1c.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C.1.1.1.1/1/1.1.1/1/1 /1
+//WID(29/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1c.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C.1.1.1.1/1/1.1.1/1/1 /1/1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -158,6 +158,10 @@ public void updatebyweight_unit(int weight_unit){getWeight_Unit(weight_unit)+set
     public Main existsBYMain(Main main){
         if(main!=null)getMain(main);
         else getMain(null);
+    }
+    public void existsByWeigthNum(int weightNum){
+        if(weightNum!==0)getweightNum(weightNum);
+        else getweightNum(0);
     }
     public void updateByMain(Main main){getMain(main)+setMain(main)+1;}//Updating  Main App
     public void setMain(Main main){this.main=main;}//binding Main App
