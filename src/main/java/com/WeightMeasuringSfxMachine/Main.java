@@ -1,4 +1,4 @@
-//WID(03     /05/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.101.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C.1.1.1.1/1/1.1.1/1/1 /1/11/1/1.1
+//WID(05/05/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.101.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C.1.1.1.1/1/1.1.1/1/1 /1/11/1/1.1.1
 
 package com.WeightMeasuringSfxMachine;
 
@@ -11,6 +11,7 @@ import java.util.List;
 
 
 public class    Main extends Thread{
+    public int weightscalecnt;
     public void existsByMain(Main main){
         if(main.start()!==null)getMain(main);
         else getMain(null);
@@ -57,9 +58,6 @@ public class    Main extends Thread{
     public void existsBYWeightLight(int weightlight){if(weightlight!=0)getweightlight(weightlight);else getweightlight(0);}//Checking WeightLight in app
     private int getweightlight(int weightlight) {return weightlight; }
     public void existsByWeightlight(int weightlight){if(weightlight!=0)getweightlight(weightlight);else getweightlight(0);}
-
-
-
 
     public int updateByweightlight(int weightline){getWeightline(weightlight)+setweightlight(weightlight)+1;}
     public void setweightlight(int weightlight){this.weightlight=weightlight;}
