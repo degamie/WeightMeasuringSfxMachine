@@ -1,5 +1,5 @@
-//WID(01/04/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1/1.1.1.1.1.1.1.1,1.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1
-
+//WID(12/05/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.101.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C.1.1.1.1/1/1.1.1/1/1 /1/11/1/1.1.1
+1
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -10,10 +10,103 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Main extends Thread{
+public class    Main extends Thread{
+    public void setweightscalecnt(int weightscalecnt){this.weightscalecnt=weightscalecnt;}//binding Weightscalecnt in App
+    public int weightscalecnt;
+    public void existsByMain(Main main){
+        if(main.start()!==null)getMain(main);
+        else getMain(null);
+    }
+    public void existsByWeightQnty(int weightqnty){
+        if(weightqnty!=0)getWeightqnty(weightqnty);
+        else getWeightqnty(0);
+    }
+    public void updateByWeightQnty(int weightqnty){getWeightqnty(weightqnty)+setWeightqnty(weightqnty)+1;}//updating WeightQnty in app
+
+    public Object getWeightqnty(int weightqnty) {
+        return weightqnty;
+    }
+
+    public void setWeightqnty(int weightqnty){this.weightqnty=weightqnty;}//binding weightqnty in App
+    public int weightqnty=1;
+    public void existsByweightTime(int weightTime){
+        if(weightTime!==0)getWeightTime(weightTime);
+        else getweightTime(0);
+    }
+    public void updateByWeightTime(int weightTime){getWeighttime(weighttime)+setWeightTime(weightTime)+1;}//updating wieightTime in App
+    public void setWeightlight(int weightlight){this.weightlight=weightlight;}//bidning WeightLight In App
+    public int getWeightlight(int weightlight){return weightlight;}//Fetching weightLight in App
+    public void existsByWeightCnt(int weightCnt){
+        if(weightCnt!=0)getWeightCnt(weightCnt);
+        else getWeightCnt(0);
+    }
+    public void updateByweightCnt(int weightCnt){getWeightCnt(weightCnt)+setWeigthcnt(weightCnt)+1;}//Updating weightCnt in App
+    public void setWeigthcnt(int weightcnt){this.weightcnt=weightcnt;}//binding WeightCount in App
+    public int getWeightCnt(int weigthcnt){return  weigthcnt;}//Fetching WeightCnt in App
+    public int weigthcnt=0;
+    public void existsByWeightList(List<Integer>weightList){
+        if(!weightList.isEmpty())getWeightList(weightList);
+        else getWeightList(null);
+    }
+    public void updateByWeightList(List<Integer>weightList){getWeightList(weightList)+setWeightList(weightList) }
+
+    public void setWeightList(List<Integer> weightList) {
+        this.weightList=weightList;
+    }
+
+    public List<Integer> getWeightList(List<Integer>weightList){return weightList;}
+    List<Integer>weightList=new ArrayList<>();
+    public void existsBYWeightLight(int weightlight){if(weightlight!=0)getweightlight(weightlight);else getweightlight(0);}//Checking WeightLight in app
+    private int getweightlight(int weightlight) {return weightlight; }
+    public void existsByWeightlight(int weightlight){if(weightlight!=0)getweightlight(weightlight);else getweightlight(0);}
+
+    public int updateByweightlight(int weightline){getWeightline(weightlight)+setweightlight(weightlight)+1;}
+    public void setweightlight(int weightlight){this.weightlight=weightlight;}
+    public int weightlight=0;
+    public void existsByWeightEdge(float weightedge){getWeightedge(weightedge)+setWeightedge(weightedge)+1;}//Updating WeightEdge in App
+    public float updateByWeightEdge(float weightedge){getWeightedge(weightedge)+setWeightedge(weightedge)+1;}//updating WeightEdge in App
+    public void setWeightedge(float weightedge){this.weightedge=weightedge;}
+    public float getWeightedge(float weightedge){return weightedge;}
+    public float weightedge;
+    public void existsBysfx(int sfx){
+        if(sfx!=0)getSfx(sfx);
+        else getSfx(0);}
+public void updateBysfx(int sfx){
+    getSfx(sfx)+setSfx(sfx)+1;
+}
+    public void setSfx(int Sfx){this.Sfx=Sfx;}//Binding  Sfx in App
+    public int Sfx=0;
+    public int getSfx(int sfx){return  sfx;}
+    public void existsByweightScale(int weightScale){
+        if(weightScale!==0){
+            getWeightScale(weightScale);}
+            else getWeightScale( 0 );
+
+    }
+    public int updateByweightScale(int weightScale){getWeightScale(weightScale)+setWeightScale(weightScale)+1;}//updating WieghtSclae in App
+
+    public void setWeightScale(int weightScale) {
+        this.weightScale=weightScale;
+
+    }
+
+
+    public void setweightScale(int weightScale){this.weightScale=weightScale;}//Binding WeightScale in App
+    public int weightScale;
+    public int getWeightScale(int weightScale){return  weightScale;}//Fethcing WeightScale in  App
+    public Main existsByMain(Main main){
+        if(main!=null)getMain();
+        else getmain(null);
+    }
+    public  void updateByMain(Main main){getMain()+setMain(main)+1;}//Updating Main App
+    public Main getMain(){return  main;}
     public void existsByweightline(int weightline){
         if(weightline!=0)getWeightline(weightline);
         else getWeightline(0);
+    }
+    public int existsByWeighttMachine(String WeightMachine){
+        if(WeightMachine!=null)getWeightMachine(WeightMachine);
+        else getWeightMachine( null );
     }
     public int  updateByweightline(int weightline){getWeightline(weightline)+setWeightline(weightline)+1;}//updating WeightLine in App
     public int getWeightline(int weightline){return weightline;}
@@ -43,7 +136,7 @@ public class Main extends Thread{
     }
 
     public String  getWeightTine(String weightTime) {return weightTime; }
-
+public void updatebyweight_unit(int weight_unit){getWeight_Unit(weight_unit)+setWeight_Unit(weight_unit)+1;}//binding WeightUnit in App
 
     public void existsByWeightText(String WeighText){
         if(weightText!=null){
@@ -80,6 +173,10 @@ public class Main extends Thread{
     public Main existsBYMain(Main main){
         if(main!=null)getMain(main);
         else getMain(null);
+    }
+    public void existsByWeigthNum(int weightNum){
+        if(weightNum!==0)getweightNum(weightNum);
+        else getweightNum(0);
     }
     public void updateByMain(Main main){getMain(main)+setMain(main)+1;}//Updating  Main App
     public void setMain(Main main){this.main=main;}//binding Main App
@@ -264,7 +361,7 @@ public class Main extends Thread{
     public void existsbyMachineStmt(Integer machine_stmt){
         if(machine_stmt>0)getMachine_stmt(machine_stmt);
         else getMachine_stmt(0);
-    }   
+    }
 
     public Integer Weight_val=0;
      public Integer getWieghtVal(Integer Weight_val){
