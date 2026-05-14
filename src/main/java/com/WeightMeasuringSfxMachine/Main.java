@@ -1,5 +1,4 @@
-//WID(05/05/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.101.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C.1.1.1.1/1/1.1.1/1/1 /1/11/1/1.1.1
-
+//WID(14/05/2026)//Sarthak Mittal Aka Degamiesign #1.1.1#1.1.1.1CC.1.1 #1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.101.1.1/1.1.1.1.1.1.1.1..1.1/1.1.1.1/1.1.1.1.1/1/1.1,1.10/1C.1.1.1.1/1/1.1.1/1/1 /1/11/1/1.1.1.1
 package com.WeightMeasuringSfxMachine;
 
 import javax.swing.text.View;
@@ -11,6 +10,8 @@ import java.util.List;
 
 
 public class    Main extends Thread{
+    public void updateByscalecnt(int weightscalecnt){getWeightScale(weightScale)+setweightScale(weightScale)+1;}//updating WeightScaleCnt in Appx
+    public void setweightscalecnt(int weightscalecnt){this.weightscalecnt=weightscalecnt;}//binding Weightscalecnt in App
     public int weightscalecnt;
     public void existsByMain(Main main){
         if(main.start()!==null)getMain(main);
